@@ -15,7 +15,6 @@
  <link rel='stylesheet' href='libs/owl-carousel2/owl.carousel.css' type='text/css' media='all' />
  <link rel='stylesheet' href='libs/owl-carousel2/owl.theme.css' type='text/css' media='all' />
  <link rel='stylesheet' href='libs/owl-carousel2/owl.transitions.css' type='text/css' media='all' />
- <link rel='stylesheet' href='libs/fancybox/jquery.fancybox.css' type='text/css' media='all' />
  <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -66,20 +65,20 @@
       <div class="banner-content">
         <div class="container">
           <div class="ban-head col-xxl-12 col-xl-13 col-lg-13 col-md-13 col-sm-13">  
-          <div class="ban-title">    
-            <h1>Разработка интернет-магазина с нуля за неделю
-            </h1> 
-          </div>
-          <div class="ban-descr">Дизайн интернет магазина, элементов микро UX, корзин, личного кабинета - от фирменного стиля до пользовательского интерфейса в сжатые сроки с командой Virtual Designers
-          </div>
-          <div class="ban-btn">
-            <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#сallback">Заказать</button>
+            <div class="ban-title">    
+              <h1>Разработка интернет-магазина с нуля за неделю
+              </h1> 
+            </div>
+            <div class="ban-descr">Дизайн интернет магазина, элементов микро UX, корзин, личного кабинета - от фирменного стиля до пользовательского интерфейса в сжатые сроки с командой Virtual Designers
+            </div>
+            <div class="ban-btn">
+              <button type="button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#сallback">Заказать</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </section>      
 <!-- ===== Ansver Uslugi Section ===== -->
 <section id="uslugi" class="sec-box ansver-sec-bg">
@@ -250,9 +249,9 @@
       <h2>Этапы разработки интернет-магазина</h2>
     </div>
     <div class="gallery-front row d-flex flex-wrap"> 
-<div class="col-sm-12">
-      <!-- 1 -->    
-      
+      <div class="col-sm-12">
+        <!-- 1 -->    
+
         <div class="gall-box">
           <img src="images/gal-1.png" alt="">
           <div class="gall-box-info">
@@ -294,11 +293,11 @@
             </div>
           </div>
         </div>
-   
-      <!--/2 -->
 
-      <!--/3 -->
-   
+        <!--/2 -->
+
+        <!--/3 -->
+
         <div class="gall-box">
           <img src="images/gal-4.png" alt="">
           <div class="gall-box-info">
@@ -308,10 +307,10 @@
             </div>
           </div>
         </div>
-     
-      <!--/4 -->
- 
-      <!--/5 -->
+
+        <!--/4 -->
+
+        <!--/5 -->
         <div class="gall-box">
           <img src="images/gal-6.png" alt="">
           <div class="gall-box-info">
@@ -355,67 +354,80 @@
 <!-- ===== Start contact ===== -->
 <section id="contact" class="sec-box contact-sec-bg">
   <div class="container">       <!-- 1 -->    
-      <div class="cont-box col-xl-10 col-lg-12 col-md-14 col-sm-16 offset-xl-7 offset-lg-6 offset-md-5 offset-sm-4">    
-        <div class="section-title">
-          <h2>Обсудить проект</h2>
-          <p class="sec-descr">Расскажите о своих бизнес-целях и мы поможем<br/> вам в их достижении</p>
-        </div>
-        <form class="form-box">                             
-          <div class="contact-form">
-            <div class="form-group">                  
-              <input type="text" class="form-control" name="name" id="name" placeholder="Имя" required="">               
-            </div>
-            <div class="form-group">               
-              <input type="text" class="form-control" name="seti" id="seti" placeholder="Telegram/Viber" required="">               
-            </div>
-            <div class="form-group">               
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">               
-            </div>
-              <div class="wrap-btn col-24">
-               <button type="submit" class="btn btn-lg">Отправить</button>
-             </div>
+    <div class="cont-box col-xl-10 col-lg-12 col-md-14 col-sm-16 offset-xl-7 offset-lg-6 offset-md-5 offset-sm-4">    
+      <div class="section-title">
+        <h2>Обсудить проект</h2>
+        <p class="sec-descr">Расскажите о своих бизнес-целях и мы поможем<br/> вам в их достижении</p>
+      </div>
+      <form class="form-box needs-validation" novalidate>                             
+        <div class="contact-form">
+          <div class="form-group">                  
+            <input type="text" class="form-control" name="name" id="name" placeholder="Имя" required>      
+            <div  class="invalid-feedback">
+              Введите Имя
+            </div>             
+          </div>
+          <div class="form-group">               
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telegram/Viber"  required pattern="" minlength="18" maxlength="18" >   
+            <div  class="invalid-feedback">
+              Введите номер телефона
+            </div>            
+          </div>
+          <div class="form-group">               
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required> 
+            <div id="emailFeedback" class="invalid-feedback">
+              Введите e-mail
+            </div>              
+          </div>
+          <div class="wrap-btn col-24">
+           <button type="submit" class="btn btn-lg">Отправить</button>
          </div>
-       </form>
-     </div>
-     <!--/1 -->
- </div>      
+       </div>
+     </form>
+
+
+    
+
+  </div>
+  <!--/1 -->
+</div>      
 </section>
 <!-- ===== End contact ===== -->
 
 <!-- ===== Start Footer ===== -->
 <footer id="" class="footer-sec">
  <div class="container"> 
- <div class=" row d-flex flex-wrap">       
- <div class="col-lg-8">
-<a class="navbar-brand" href="#"><img src="images/logo-2.png" alt="logo"></a>
-    
+   <div class=" row d-flex flex-wrap">       
+     <div class="col-lg-8">
+      <a class="navbar-brand" href="#"><img src="images/logo-2.png" alt="logo"></a>
+
       <div class="foot-soc">
-      <a href="https://www.instagram.com/" target="_blank"><img src="images/inst.png" alt="instagram"></a>   
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/inst.png" alt="instagram"></a>   
         <a href="https://facebook.com/" target="_blank"><img src="images/fb.png" alt="facebook"></a>
         <a href="tg://resolve?domain=имя" target="_blank"><img src="images/tel.png" alt="telegram"></a>
         <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber"></a>
-        <a href="https://api.whatsapp.com/" target="_blank"><img src="images/wth.png" alt="whasup"></a>
+        <a href="https://api.whatsapp.com/" target="_blank"><img src="images/wth.png" alt="whatsup"></a>
         
       </div>  
-      </div>
-       <div class="col-lg-8">       
-          <div class="foot-phone"> 
-            <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Валерия: +79805585949</a>
-            <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Анна: +79805585949</a>
-            <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Валерия: +79805585949</a>
+    </div>
+    <div class="col-lg-8">       
+      <div class="foot-phone"> 
+        <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Валерия: +79805585949</a>
+        <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Анна: +79805585949</a>
+        <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Валерия: +79805585949</a>
       </div>
     </div>
- <div class="col-lg-8">
- <div class="foot-mail"> 
- <a href="mailto:hr@dv-s.com">hr@dv-s.com</a>
+    <div class="col-lg-8">
+     <div class="foot-mail"> 
+       <a href="mailto:hr@dv-s.com">hr@dv-s.com</a>
+     </div>
+   </div>
  </div>
-  </div>
-  </div>
 
 
-  <div class="copyright box-text">Developers 2018-2021 © All rights reserved
-    </div>
-  </div>
+ <div class="copyright box-text">Developers 2018-2021 © All rights reserved
+ </div>
+</div>
 </footer>
 <!-- /Footer -->
 
@@ -437,23 +449,34 @@
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="modal-body">
-         <form class="form-box">                             
-          <div class="contact-form">
-            <div class="form-group title-form"><h2>Обратная связь</h2></div>
-            <div class="form-group">                  
-              <input type="text" class="form-control" name="name" id="name" placeholder="Имя" required>               
-            </div>
-            <div class="form-group">               
-              <input type="phone" class="form-control" name="phone" id="phone" placeholder="Telegram/Viber" required>               
-            </div>
-            <div class="form-group">               
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>               
-            </div>
-              <div class="wrap-btn col-24">
-               <button type="submit" class="btn btn-lg">Отправить</button>
-             </div>
+      <form class="form-box needs-validation" novalidate>                             
+        <div class="contact-form">
+        <div class="form-group title-form"><h2>Обратная связь</h2></div>
+          <div class="form-group">                  
+            <input type="text" class="form-control" name="name" id="name" placeholder="Имя" required>      
+            <div  class="invalid-feedback">
+              Введите Имя
+            </div>             
+          </div>
+          <div class="form-group">               
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telegram/Viber"  required pattern="" minlength="18" maxlength="18" >   
+            <div  class="invalid-feedback">
+              Введите номер телефона
+            </div>            
+          </div>
+          <div class="form-group">               
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required> 
+            <div id="emailFeedback" class="invalid-feedback">
+              Введите e-mail
+            </div>              
+          </div>
+          <div class="wrap-btn col-24">
+           <button type="submit" class="btn btn-lg">Отправить</button>
          </div>
-       </form>
+       </div>
+     </form>
+
+
    </div>
  </div>
 </div>
@@ -474,7 +497,7 @@
             <div class="form-group descr-form">Первое ознакомительное <br/>занятие в ближайшем к вам <br/>нейрологопедическом центре
             </div>
             <div class="form-group">                  
-              <input type="text" class="form-control" name="name" id="name4" placeholder="Имя">               
+              <input type="text" class="form-control" name="name" id="name4" aria-describedby="invalidCheck3Feedback" placeholder="Имя">               
             </div>
             <div class="form-group">               
               <input type="tel" class="form-control" name="phone" id="phone4" placeholder="Телефон">               
@@ -504,7 +527,6 @@
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src='libs/owl-carousel2/jquery-migrate.min.js'></script>
 <script src='libs/owl-carousel2/owl.carousel.min.js'></script>
-<script src="libs/fancybox/jquery.fancybox.js"></script>
 <script src="libs/common.js"></script>
 
 
