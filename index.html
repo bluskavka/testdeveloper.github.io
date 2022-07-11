@@ -443,7 +443,7 @@
         <h2>Обсудить проект</h2>
         <p class="sec-descr">Расскажите о своих бизнес-целях и мы поможем вам в их достижении</p>
       </div>
-      <form class="form-box needs-validation" novalidate>                          
+      <form id="form-autoback" class="form-box needs-validation" novalidate>                          
         <div class="contact-form">
           <div class="form-group">                  
             <input type="text" class="form-control" name="name" id="name" placeholder="Имя" required>      
@@ -452,7 +452,7 @@
             </div>             
           </div>
           <div class="form-group">               
-            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telegram/Viber"  required pattern="" minlength="18" maxlength="18" >   
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telegram/Viber"  required >   
             <div  class="invalid-feedback">
               Введите номер телефона
             </div>            
@@ -467,6 +467,8 @@
            <button type="submit" class="btn btn-lg">Отправить</button>
          </div>
        </div>
+       <input type="hidden" name="formData" value="Заказ з сайта">
+              <p class="fmtext"></p> 
      </form>
                    <div class="cont-img">
         <img src="images/phone-mob.png" alt="">
@@ -481,8 +483,8 @@
 <footer id="" class="footer-sec">
  <div class="container"> 
    <div class=" row d-flex flex-wrap">       
-     <div class="col-lg-8 col-md-8">
-      <a class="navbar-brand" href="https://bluskavka.github.io/testdeveloper.github.io/"><img src="images/logo-2.png" alt="logo"></a>
+     <div class="foot-1 col-lg-8 col-md-12">
+      <a class="foot-brand" href="https://bluskavka.github.io/testdeveloper.github.io/"><img src="images/logo-2.png" alt="logo"></a>
 
       <div class="foot-soc">
         <a href="https://www.instagram.com/" target="_blank"><img src="images/inst.png" alt="instagram"></a>   
@@ -493,14 +495,22 @@
         
       </div>  
     </div>
-    <div class="col-lg-8 col-md-8">       
+    <div class="foot-2 col-lg-8 col-md-12">       
       <div class="foot-phone"> 
         <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Валерия: +79805585949</a>
         <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Анна: +79805585949</a>
         <a href="https://www.viber.com/" target="_blank"><img src="images/viber.png" alt="viber">Валерия: +79805585949</a>
       </div>
+            <div class="foot-soc-2 d-md-none">
+        <a href="https://facebook.com/" target="_blank"><i class='fab fa-facebook-f'></i></a> 
+        <a href="tg://resolve?domain=имя" target="_blank"><i class='fab fa-telegram-plane'></i></a>
+        <a href="https://www.viber.com/" target="_blank"><i class='fab fa-viber'></i></a> 
+        <a href="https://www.instagram.com/" target="_blank"><i class='fab fa-instagram'></i></a>
+        <a href="https://api.whatsapp.com/" target="_blank"><i class='fab fa-whatsapp'></i></a>
+        
+      </div>
     </div>
-    <div class="col-lg-8 col-md-8">
+    <div class="foot-3 col-lg-8 ">
      <div class="foot-mail"> 
        <a href="mailto:hr@dv-s.com">hr@dv-s.com</a>
      </div>
@@ -532,7 +542,7 @@
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="modal-body">
-      <form class="form-box needs-validation" novalidate>                             
+      <form id="formсallback" class="form-box needs-validation" novalidate>                             
         <div class="contact-form">
         <div class="form-group title-form"><h2>Обратная связь</h2></div>
           <div class="form-group">                  
@@ -542,7 +552,7 @@
             </div>             
           </div>
           <div class="form-group">               
-            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telegram/Viber"  required pattern="" minlength="18" maxlength="18" >   
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telegram/Viber" required >   
             <div  class="invalid-feedback">
               Введите номер телефона
             </div>            
@@ -556,7 +566,10 @@
           <div class="wrap-btn col-24">
            <button type="submit" class="btn btn-lg">Отправить</button>
          </div>
+         <input name="formData" value="Заказ з сайта" type="hidden">
+            <div class="success"></div>
        </div>
+    
      </form>
 
 
@@ -575,6 +588,7 @@
 <script src="libs/bootstrap/bootstrap.min.js"></script>
 <script src='libs/owl-carousel2/jquery-migrate.min.js'></script>
 <script src='libs/owl-carousel2/owl.carousel.min.js'></script>
+<script src="libs/script.js"></script>
 <script src="libs/common.js"></script>
 
 
