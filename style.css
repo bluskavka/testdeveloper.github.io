@@ -1070,10 +1070,11 @@ margin: auto;
 .foot-1 {
     text-align: center;
 }
+
 .foot-mail {
     width: 280px;
-    margin: auto;
-    padding-left: 20px;
+    margin: initial;
+    padding-left: 60px;
 }
 .copyright {
     margin: 23px auto 40px;
