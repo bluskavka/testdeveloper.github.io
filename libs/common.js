@@ -50,9 +50,9 @@ $("#steps-sl").each(function(){
             items: carousel_columns,
             responsive: {
                 0:    {items: 1},
-                479:  {items: 1},
-                768:  {items: 1},
-                991:  {items: 1.25},
+                479:  {items: 1.25},
+                768:  {items: 1.15},
+                991:  {items: 1.15},
                 1024:  {items: 1.5},
                 1199: {items: 1.75}
             },
@@ -68,7 +68,38 @@ $("#steps-sl").each(function(){
     });
 
 /**/
+$("#gallery-front").each(function(){
 
+        var carousel_columns = $(this).data('carousel_columns');
+        var autoplay = $(this).data('autoplay');
+        var slidespeed = $(this).data('slidespeed');
+        var pagination = $(this).data('pagination');
+
+        if(pagination == 'yes'){ pagination = 'true'; }
+        if(pagination == 'no'){ pagination = 'false'; }
+
+        $(this).owlCarousel({
+            autoplay: autoplay,
+            autoplaySpeed: slidespeed,
+            items: carousel_columns,
+            responsive: {
+                0:    {items: 1},
+                479:  {items: 1.25},
+                768:  {items: 1.15},
+                991:  {items: 1.15},
+                1024:  {items: 1.5},
+                1199: {items: 1.75}
+            },
+            dots: false,
+            dotsEach: true,
+            loop:true,
+            pagination : true,
+            nav: true,
+            navText : ['', ''],
+            loop: true
+
+        });
+    });
 //CAROUSEL END
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -89,5 +120,5 @@ $("#steps-sl").each(function(){
     
 
 
-    
+
 });
