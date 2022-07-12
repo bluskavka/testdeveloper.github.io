@@ -1091,9 +1091,23 @@ margin: auto;
     content: "";
     height: 40px;
     width: 40px;
-    right: 33px;
-    margin-top: -12px;
+    right: 33px;    
+    top: 0;
 }
+
+#steps .share-img {
+  margin-top: 18px;
+  margin-left: -19px;
+  left: 0;
+}
+#designers .share-img {
+  margin-top: -12px;
+}
+.step-sec-bg,
+.designers-sec-bg {
+  position: relative;
+}
+
 }
   @media only screen and  (max-width: 735.98px) {
 h1, .h1 {
@@ -1135,6 +1149,7 @@ h3, .h3 {
   }
 .designers-sec-bg {
     background: none;
+    position: relative;
   }
 .des-box .wrap-btn {
   text-align: center;
