@@ -1114,6 +1114,14 @@ h3, .h3 {
 .footer-sec {
     padding-top: 60px;
 }
+.navbar-toggler .icon-bar, 
+.navbar-toggler:visited .icon-bar {
+    width: 13px;
+    height: 13px;
+    margin: 6px 2px;
+    border-radius: 100%;
+    float: left;
+}
 }
 
 @media only screen and  (max-width: 575.98px) {
@@ -1125,11 +1133,10 @@ h3, .h3 {
   text-align: center;
   margin-top: 20px;
   }
-
-  .designers-sec-bg {
+.designers-sec-bg {
     background: none;
   }
- .des-box .wrap-btn {
+.des-box .wrap-btn {
   text-align: center;
  }
 .btn,
